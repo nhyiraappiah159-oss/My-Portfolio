@@ -225,25 +225,48 @@
         });
     }
 
-    /* ---------- Contact form (opens visitor's email client, sent to owner) ---------- */
+    /* ---------- Contact form (delivered to owner's email via Web3Forms) ---------- */
     var form = document.getElementById("contactForm");
     if (form) {
+        var submitBtn = form.querySelector('button[type="submit"]');
+        var successMsg = document.getElementById("formSuccess");
         form.addEventListener("submit", function (e) {
             e.preventDefault();
             if (!form.checkValidity()) {
                 form.reportValidity();
                 return;
             }
-            var name = document.getElementById("name").value.trim();
-            var from = document.getElementById("email").value.trim();
-            var subject = document.getElementById("subject").value.trim();
-            var message = document.getElementById("message").value.trim();
-            var body = "Name: " + name + "%0AEmail: " + from + "%0A%0A" + message;
-            var mailto = "mailto:nhyiraappiah159@gmail.com?subject=" +
-                encodeURIComponent(subject) + "&body=" + body;
-            window.location.href = mailto;
-            document.getElementById("formSuccess").classList.remove("d-none");
-            form.reset();
+            var data = Object.fromEntries(new FormData(form).entries());
+            data.subject = data.subject || "New message from your portfolio";
+            data.message = "Name: " + data.name + "\nEmail: " + data.email + "\n\n" + data.message;
+
+            function fallbackMailto() {
+                var body = "Name: " + data.name + "%0AEmail: " + data.email + "%0A%0A" + data.message;
+                window.location.href = "mailto:nhyiraappiah159@gmail.com?subject=" +
+                    encodeURIComponent(data.subject) + "&body=" + body;
+                if (successMsg) successMsg.classList.remove("d-none");
+                form.reset();
+            }
+
+            if (submitBtn) { submitBtn.disabled = true; submitBtn.textContent = "Sending..."; }
+            fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                headers: { "Content-Type": "application/json", "Accept": "application/json" },
+                body: JSON.stringify(data)
+            })
+                .then(function (res) { return res.json(); })
+                .then(function (json) {
+                    if (json.success) {
+                        if (successMsg) successMsg.classList.remove("d-none");
+                        form.reset();
+                    } else {
+                        fallbackMailto();
+                    }
+                })
+                .catch(function () { fallbackMailto(); })
+                .finally(function () {
+                    if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = "Send Message"; }
+                });
         });
     }
 })();
