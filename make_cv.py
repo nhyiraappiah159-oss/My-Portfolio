@@ -91,13 +91,13 @@ def job(role, period, org, desc):
     pdf.multi_cell(0, 5.2, desc)
     pdf.ln(1.5)
 
-job("Junior UI/UX Designer", "2024 - Present",
+job("Junior UI/UX Designer", "2025 - Present",
     "Design and Technology Institute (DTI)",
     "Design intuitive user interfaces and collaborate with developers to ship responsive web products used by 500+ students.")
-job("Front End Developer (Intern)", "2024 - Present",
+job("Front End Developer (Intern)", "2025 - Present",
     "Design and Technology Institute (DTI)",
     "Build and maintain marketing and dashboard pages with HTML, CSS and JavaScript, improving load speed by 35%.")
-job("Web Designer (Freelance)", "2023 - 2024",
+job("Web Designer (Freelance)", "2023 - 2025",
     "Self-employed",
     "Created landing pages and brand visuals for small businesses across Ghana, with a 100% on-time delivery record.")
 
