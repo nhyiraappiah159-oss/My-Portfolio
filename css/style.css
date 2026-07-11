@@ -74,6 +74,32 @@ p { margin: 0 0 1rem; }
 .ms-4 { margin-left: 1.5rem; }
 .pe-3 { padding-right: 1rem; }
 .px-4 { padding-left: 1.5rem; padding-right: 1.5rem; }
+.px-5 { padding-left: 3rem; padding-right: 3rem; }
+.py-3 { padding-top: 1rem; padding-bottom: 1rem; }
+.p-4 { padding: 1.5rem; }
+.p-lg-5 { padding: 1.5rem; }
+.my-5 { margin-top: 3rem; margin-bottom: 3rem; }
+.ms-sm-4 { margin-left: 0; }
+.mx-auto { display: block; margin-left: auto; margin-right: auto; }
+.w-25 { width: 25% !important; }
+.overflow-hidden { overflow: hidden; }
+.flex-sm-row { flex-direction: column; }
+.text-lg-end { text-align: left; }
+.text-md-end { text-align: left; }
+.text-md-start { text-align: left; }
+
+@media (min-width: 576px) {
+    .ms-sm-4 { margin-left: 1.5rem; }
+    .flex-sm-row { flex-direction: row; }
+}
+@media (min-width: 768px) {
+    .text-md-start { text-align: left; }
+    .text-md-end { text-align: right; }
+}
+@media (min-width: 992px) {
+    .p-lg-5 { padding: 3rem; }
+    .text-lg-end { text-align: right; }
+}
 .text-center { text-align: center; }
 .text-start { text-align: left; }
 .text-primary { color: var(--primary) !important; }
@@ -116,6 +142,7 @@ p { margin: 0 0 1rem; }
 .display-3 { font-size: 3.2rem; font-weight: 800; }
 .display-4 { font-size: 2.6rem; font-weight: 800; }
 .display-5 { font-size: 2.2rem; font-weight: 700; }
+.fs-5 { font-size: 1.25rem; }
 
 /* ===== Buttons ===== */
 .btn {

@@ -5,37 +5,18 @@
     <meta charset="utf-8">
     <title>Nana Aba Nhyira - CV</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-
-    <style>
-        body { background: #f5f6f8; }
-        .cv-wrapper { max-width: 900px; margin: 40px auto; background: #fff; padding: 50px; box-shadow: 0 0 30px rgba(0,0,0,.08); }
-        .cv-name { color: #06a3da; }
-        .cv-section { margin-top: 35px; }
-        .cv-section h3 { border-bottom: 2px solid #06a3da; padding-bottom: 8px; }
-        .cv-skill { display: inline-block; border: 1px solid #06a3da; color: #06a3da; border-radius: 30px; padding: 6px 18px; margin: 4px; font-weight: 600; }
-        .cv-item { margin-bottom: 18px; }
-        .cv-item h5 { margin-bottom: 2px; }
-        .cv-date { color: #06a3da; font-weight: 600; font-size: .9rem; }
-        @media print {
-            body { background: #fff; }
-            .cv-wrapper { margin: 0; box-shadow: none; max-width: 100%; padding: 0; }
-            .no-print { display: none !important; }
-        }
-    </style>
 </head>
 
-<body>
+<body style="background:#f5f6f8">
     <div class="cv-wrapper">
-        <a href="index.html" class="btn btn-primary no-print mb-4"><i class="fa fa-arrow-left me-2"></i>Back to Portfolio</a>
+        <a href="index.html" class="btn btn-primary mb-4 no-print"><i class="fa fa-arrow-left me-2"></i>Back to Portfolio</a>
 
         <div class="text-center">
             <h1 class="display-4 fw-bold cv-name mb-1">Nana Aba Nhyira</h1>
             <h4 class="text-muted fw-normal">Junior Web Developer &middot; UI/UX Designer</h4>
-            <p class="mb-1"><i class="fa fa-envelope text-primary me-2"></i>nhyiraappiah159@gmail.com
+            <p class="mb-1"><i class="fa fa-envelope text-primary me-2"></i><a href="mailto:nhyiraappiah159@gmail.com" class="text-decoration-none">nhyiraappiah159@gmail.com</a>
                 &nbsp;&nbsp;|&nbsp;&nbsp;<i class="fa fa-phone text-primary me-2"></i>+233 50 016 8681
                 &nbsp;&nbsp;|&nbsp;&nbsp;<i class="fa fa-map-marker-alt text-primary me-2"></i>Accra-East-Legon</p>
             <p class="mb-0">
@@ -53,9 +34,9 @@
         <div class="cv-section">
             <h3>Core Competencies</h3>
             <span class="cv-skill">HTML5 &amp; Semantic Markup</span>
-            <span class="cv-skill">CSS3 &amp; Tailwind</span>
+            <span class="cv-skill">CSS3 &amp; SASS</span>
             <span class="cv-skill">JavaScript (ES6+)</span>
-            <span class="cv-skill">Bootstrap</span>
+            <span class="cv-skill">UI Frameworks &amp; Libraries</span>
             <span class="cv-skill">Responsive &amp; Mobile-First</span>
             <span class="cv-skill">UI/UX Design</span>
             <span class="cv-skill">Figma</span>
@@ -103,6 +84,14 @@
             <button class="btn btn-primary btn-lg" onclick="window.print()"><i class="fa fa-print me-2"></i>Print / Save as PDF</button>
         </div>
     </div>
+
+    <style>
+        @media print {
+            body { background: #fff; }
+            .cv-wrapper { margin: 0; box-shadow: none; max-width: 100%; padding: 0; }
+            .no-print { display: none !important; }
+        }
+    </style>
 </body>
 
 </html>
