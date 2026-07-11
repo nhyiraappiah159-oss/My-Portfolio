@@ -3,10 +3,10 @@
 
 <head>
     <meta charset="utf-8">
-    <title>ProMan - Personal Portfolio HTML Template</title>
+    <title>Nana Aba Nhyira - Junior Web Developer (UI/UX)</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+    <meta content="Nana Aba Nhyira, Junior Web Developer, UI/UX Designer, Front End Developer, Portfolio, Responsive Web Design, Figma, Ghana" name="keywords">
+    <meta content="Nana Aba Nhyira is a Junior Web Developer and UI/UX Designer specialised in crafting clean, accessible and high-converting web experiences with HTML, CSS, JavaScript, Bootstrap and Figma." name="description">
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
@@ -30,6 +30,52 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        .text-gradient {
+            background: linear-gradient(90deg, #06A3DA, #34C5F0);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bg-icon i { transition: transform .3s ease, color .3s ease; }
+        .service-item:hover .bg-icon i { transform: scale(1.15); color: #06A3DA !important; }
+        .service-item { transition: transform .3s ease, box-shadow .3s ease; }
+        .service-item:hover { transform: translateY(-6px); box-shadow: 0 .75rem 1.5rem rgba(0,0,0,.12); }
+        .tool-box { transition: transform .3s ease, box-shadow .3s ease; background: #fff; }
+        .tool-box:hover { transform: translateY(-4px); box-shadow: 0 .5rem 1rem rgba(0,0,0,.1); }
+        .social-btn:hover, .back-to-top:hover { transform: translateY(-3px); }
+        .availability-badge {
+            display: inline-flex; align-items: center; gap: 8px;
+            background: rgba(6,163,218,.1); color: #06A3DA;
+            padding: 6px 16px; border-radius: 30px; font-weight: 600; font-size: .9rem;
+        }
+        .availability-badge .dot {
+            width: 9px; height: 9px; border-radius: 50%; background: #28a745;
+            box-shadow: 0 0 0 0 rgba(40,167,69,.6); animation: pulse 1.8s infinite;
+        }
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(40,167,69,.6); }
+            70% { box-shadow: 0 0 0 8px rgba(40,167,69,0); }
+            100% { box-shadow: 0 0 0 0 rgba(40,167,69,0); }
+        }
+        .portfolio-cap { background: #fff; }
+        .stat-link { text-decoration: none; display: inline-flex; align-items: baseline; line-height: 1; transition: transform .25s ease; }
+        .stat-link:hover { transform: translateY(-3px); }
+        .stat-link .plus { font-size: 1.6rem; font-weight: 800; }
+        .whatsapp-pulse { position: relative; }
+        .whatsapp-pulse::after {
+            content: ""; position: absolute; right: -4px; top: -4px; width: 10px; height: 10px;
+            background: #25D366; border-radius: 50%; box-shadow: 0 0 0 0 rgba(37,211,102,.7); animation: wp-pulse 1.8s infinite;
+        }
+        @keyframes wp-pulse {
+            0% { box-shadow: 0 0 0 0 rgba(37,211,102,.6); }
+            70% { box-shadow: 0 0 0 10px rgba(37,211,102,0); }
+            100% { box-shadow: 0 0 0 0 rgba(37,211,102,0); }
+        }
+        .project-cap { background: #f8fafc; border-top: 3px solid #06A3DA; }
+        blockquote.fancy { border-left: 4px solid #06A3DA; background: #f8fafc; }
+    </style>
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
@@ -45,7 +91,7 @@
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top shadow py-lg-0 px-4 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
         <a href="index.html" class="navbar-brand d-block d-lg-none">
-            <h1 class="text-primary fw-bold m-0">ProMan</h1>
+            <h1 class="text-primary fw-bold m-0">Nana Aba</h1>
         </a>
         <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -56,13 +102,12 @@
                 <a href="#about" class="nav-item nav-link">About</a>
                 <a href="#skill" class="nav-item nav-link">Skills</a>
                 <a href="#service" class="nav-item nav-link">Services</a>
+                <a href="#process" class="nav-item nav-link">Process</a>
             </div>
             <a href="index.html" class="navbar-brand bg-secondary py-3 px-4 mx-3 d-none d-lg-block">
-                <h1 class="text-primary fw-bold m-0">ProMan</h1>
-            </a>
+                <h1 class="text-primary fw-bold m-0">Nana Aba</h1>
             <div class="navbar-nav me-auto py-0">
                 <a href="#project" class="nav-item nav-link">Projects</a>
-                <a href="#team" class="nav-item nav-link">Team</a>
                 <a href="#testimonial" class="nav-item nav-link">Testimonial</a>
                 <a href="#contact" class="nav-item nav-link">Contact</a>
             </div>
@@ -77,16 +122,12 @@
             <div class="row g-5 align-items-center">
                 <div class="col-lg-6 py-6 pb-0 pt-lg-0">
                     <h3 class="text-primary mb-3">I'm</h3>
-                    <h1 class="display-3 mb-3">Kate Winslet</h1>
+                    <h1 class="display-3 mb-3">Nana Aba Nhyira</h1>
                     <h2 class="typed-text-output d-inline"></h2>
-                    <div class="typed-text d-none">Web Designer, Web Developer, Front End Developer, Apps Designer, Apps Developer</div>
-                    <div class="d-flex align-items-center pt-5">
-                        <a href="" class="btn btn-primary py-3 px-4 me-5">Download CV</a>
-                        <button type="button" class="btn-play" data-bs-toggle="modal"
-                            data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
-                            <span></span>
-                        </button>
-                        <h5 class="ms-4 mb-0 d-none d-sm-block">Play Video</h5>
+                    <div class="typed-text d-none">Junior Web Developer, UI Designer, UX Designer, Front End Developer</div>
+                    <div class="d-flex align-items-center pt-5 flex-wrap">
+                        <a href="cv.html" class="btn btn-primary py-3 px-4 me-3 mb-3" target="_blank"><i class="fa fa-download me-2"></i>Download CV</a>
+                        <a href="https://wa.me/233500168681?text=Hello%20Nana%20Aba!" target="_blank" class="btn btn-outline-success py-3 px-4 mb-3 whatsapp-pulse"><i class="fab fa-whatsapp me-2"></i>Chat on WhatsApp</a>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -98,25 +139,7 @@
     <!-- Header End -->
 
 
-    <!-- Video Modal Start -->
-    <div class="modal modal-video fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content rounded-0">
-                <div class="modal-header">
-                    <h3 class="modal-title" id="exampleModalLabel">Youtube Video</h3>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <!-- 16:9 aspect ratio -->
-                    <div class="ratio ratio-16x9">
-                        <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
-                            allow="autoplay"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Video Modal End -->
+    <!-- Video Modal removed: replaced with direct WhatsApp CTA -->
 
 
     <!-- About Start -->
@@ -126,16 +149,17 @@
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="d-flex align-items-center mb-5">
                         <div class="years flex-shrink-0 text-center me-4">
-                            <h1 class="display-1 mb-0">15</h1>
-                            <h5 class="mb-0">Years</h5>
+                            <h1 class="display-1 mb-0">1</h1>
+                            <h5 class="mb-0">Year</h5>
                         </div>
-                        <h3 class="lh-base mb-0">of working experience as a web designer & developer</h3>
+                        <h3 class="lh-base mb-0">of hands-on experience as a junior web developer &amp; UI/UX designer delivering production-ready interfaces</h3>
                     </div>
-                    <p class="mb-4">Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam rebum amet diam ipsum. Clita clita labore, dolor duo nonumy clita sit at, sed sit sanctus dolor eos.</p>
-                    <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Afordable Prices</p>
-                    <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>High Quality Product</p>
-                    <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>On Time Project Delivery</p>
-                    <a class="btn btn-primary py-3 px-5 mt-3" href="">Read More</a>
+                    <p class="mb-4">I am a detail-obsessed Junior Web Developer and UI/UX Designer who turns complex ideas into clean, accessible and high-converting digital products. Over the past year I have shipped responsive websites, design systems and mobile-first interfaces for clients and institutions across Ghana &mdash; blending sharp visual design with solid front-end engineering in HTML, CSS, JavaScript, Bootstrap and Figma.</p>
+                    <p class="mb-4">My competitive edge is the rare combination of <strong>design empathy</strong> and <strong>technical execution</strong>: I do not just draw pretty screens, I build them. From user research and wireframes to pixel-perfect, performant code, I own the full journey and obsess over loading speed, accessibility (WCAG), and the small interactions that make a product feel <em>premium</em>.</p>
+                    <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Pixel-perfect, responsive &amp; accessible interfaces</p>
+                    <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Research-driven UI/UX &amp; design systems</p>
+                    <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>On-time delivery with transparent communication</p>
+                    <a class="btn btn-primary py-3 px-5 mt-3" href="#skill">Explore My Competencies</a>
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="row g-3 mb-4">
@@ -148,14 +172,18 @@
                     </div>
                     <div class="d-flex align-items-center mb-3">
                         <h5 class="border-end pe-3 me-3 mb-0">Happy Clients</h5>
-                        <h2 class="text-primary fw-bold mb-0" data-toggle="counter-up">1234</h2>
+                        <a class="stat-link text-primary" href="https://wa.me/233500168681?text=Hello%20Nana%20Aba!" target="_blank" title="Say hello on WhatsApp">
+                            <h2 class="text-primary fw-bold mb-0 d-inline" data-toggle="counter-up">10</h2><span class="plus">+</span>
+                        </a>
                     </div>
-                    <p class="mb-4">Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam amet diam ipsum clita labore dolor duo clita.</p>
+                    <p class="mb-4">Every client I work with becomes a long-term advocate &mdash; I measure success by retention, referrals and the results my designs drive, not just deliverables.</p>
                     <div class="d-flex align-items-center mb-3">
                         <h5 class="border-end pe-3 me-3 mb-0">Projects Completed</h5>
-                        <h2 class="text-primary fw-bold mb-0" data-toggle="counter-up">1234</h2>
+                        <a class="stat-link text-primary" href="https://wa.me/233500168681?text=Hello%20Nana%20Aba!" target="_blank" title="Say hello on WhatsApp">
+                            <h2 class="text-primary fw-bold mb-0 d-inline" data-toggle="counter-up">10</h2><span class="plus">+</span>
+                        </a>
                     </div>
-                    <p class="mb-0">Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam amet diam ipsum clita labore dolor duo clita.</p>
+                    <p class="mb-0">From landing pages and portfolios to full design systems and dashboards &mdash; each project is shipped to a production standard with clean, maintainable code.</p>
                 </div>
             </div>
         </div>
@@ -168,65 +196,65 @@
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <h1 class="display-5 mb-5">Skills & Experience</h1>
-                    <p class="mb-4">Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam rebum amet diam ipsum clita dolor duo clita sit.</p>
-                    <h3 class="mb-4">My Skills</h3>
+                    <h1 class="display-5 mb-5">Skills &amp; Competencies</h1>
+                    <p class="mb-4">I operate across the full product-design spectrum &mdash; from discovery and wireframes to production-ready code. Below is a snapshot of the tools and technologies I use daily to ship fast, accessible and beautiful web experiences.</p>
+                    <h3 class="mb-4">Technical &amp; Design Toolbox</h3>
                     <div class="row align-items-center">
                         <div class="col-md-6">
                             <div class="skill mb-4">
                                 <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">HTML</h6>
+                                    <h6 class="font-weight-bold">HTML5 &amp; Semantic Markup</h6>
                                     <h6 class="font-weight-bold">95%</h6>
                                 </div>
                                 <div class="progress">
-                                    <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </div>
                             <div class="skill mb-4">
                                 <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">CSS</h6>
-                                    <h6 class="font-weight-bold">85%</h6>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">PHP</h6>
+                                    <h6 class="font-weight-bold">CSS3 &amp; SASS</h6>
                                     <h6 class="font-weight-bold">90%</h6>
                                 </div>
                                 <div class="progress">
-                                    <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar bg-warning" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">Responsive &amp; Mobile-First</h6>
+                                    <h6 class="font-weight-bold">92%</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 92%" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="skill mb-4">
                                 <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">Javascript</h6>
-                                    <h6 class="font-weight-bold">90%</h6>
+                                    <h6 class="font-weight-bold">JavaScript (ES6+)</h6>
+                                    <h6 class="font-weight-bold">82%</h6>
                                 </div>
                                 <div class="progress">
-                                    <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 82%" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </div>
                             <div class="skill mb-4">
                                 <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">Angular JS</h6>
-                                    <h6 class="font-weight-bold">95%</h6>
+                                    <h6 class="font-weight-bold">UI Frameworks &amp; Libraries</h6>
+                                    <h6 class="font-weight-bold">88%</h6>
                                 </div>
                                 <div class="progress">
-                                    <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar bg-info" role="progressbar" style="width: 88%" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </div>
                             <div class="skill mb-4">
                                 <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">Wordpress</h6>
+                                    <h6 class="font-weight-bold">Figma, UX &amp; Prototyping</h6>
                                     <h6 class="font-weight-bold">85%</h6>
                                 </div>
                                 <div class="progress">
-                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar bg-secondary" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </div>
                         </div>
@@ -245,56 +273,50 @@
                         <div id="tab-1" class="tab-pane fade show p-0 active">
                             <div class="row gy-5 gx-4">
                                 <div class="col-sm-6">
-                                    <h5>UI Designer</h5>
+                                    <h5>Junior UI Designer</h5>
                                     <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">2000 - 2045</p>
-                                    <h6 class="mb-0">Apex Software Inc</h6>
+                                    <p class="text-primary mb-1">2024 - Present</p>
+                                    <h6 class="mb-0">Design and Technology Institute (DTI)</h6>
                                 </div>
                                 <div class="col-sm-6">
-                                    <h5>Product Designer</h5>
+                                    <h5>Junior UX Designer</h5>
                                     <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">2000 - 2045</p>
-                                    <h6 class="mb-0">Apex Software Inc</h6>
+                                    <p class="text-primary mb-1">2024 - Present</p>
+                                    <h6 class="mb-0">Design and Technology Institute (DTI)</h6>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h5>Front End Developer</h5>
+                                    <hr class="text-primary my-2">
+                                    <p class="text-primary mb-1">2024 - Present</p>
+                                    <h6 class="mb-0">Design and Technology Institute (DTI)</h6>
                                 </div>
                                 <div class="col-sm-6">
                                     <h5>Web Designer</h5>
                                     <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">2000 - 2045</p>
-                                    <h6 class="mb-0">Apex Software Inc</h6>
-                                </div>
-                                <div class="col-sm-6">
-                                    <h5>Apps Designer</h5>
-                                    <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">2000 - 2045</p>
-                                    <h6 class="mb-0">Apex Software Inc</h6>
+                                    <p class="text-primary mb-1">2024 - Present</p>
+                                    <h6 class="mb-0">Design and Technology Institute (DTI)</h6>
                                 </div>
                             </div>
                         </div>
                         <div id="tab-2" class="tab-pane fade show p-0">
                             <div class="row gy-5 gx-4">
                                 <div class="col-sm-6">
-                                    <h5>UI Design Course</h5>
+                                    <h5>UI/UX Design Course</h5>
                                     <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">2000 - 2045</p>
-                                    <h6 class="mb-0">Cambridge University</h6>
+                                    <p class="text-primary mb-1">2025 - Present</p>
+                                    <h6 class="mb-0">Design and Technology Institute (DTI)</h6>
                                 </div>
                                 <div class="col-sm-6">
-                                    <h5>IOS Development</h5>
+                                    <h5>Web Development</h5>
                                     <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">2000 - 2045</p>
-                                    <h6 class="mb-0">Cambridge University</h6>
+                                    <p class="text-primary mb-1">2025 - Present</p>
+                                    <h6 class="mb-0">Design and Technology Institute (DTI)</h6>
                                 </div>
                                 <div class="col-sm-6">
-                                    <h5>Web Design</h5>
+                                    <h5>Front End Basics</h5>
                                     <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">2000 - 2045</p>
-                                    <h6 class="mb-0">Cambridge University</h6>
-                                </div>
-                                <div class="col-sm-6">
-                                    <h5>Apps Design</h5>
-                                    <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">2000 - 2045</p>
-                                    <h6 class="mb-0">Cambridge University</h6>
+                                    <p class="text-primary mb-1">2025 - Present</p>
+                                    <h6 class="mb-0">Design and Technology Institute (DTI)</h6>
                                 </div>
                             </div>
                         </div>
@@ -314,43 +336,40 @@
                     <h1 class="display-5 mb-0">My Services</h1>
                 </div>
                 <div class="col-lg-6 text-lg-end">
-                    <a class="btn btn-primary py-3 px-5" href="">Hire Me</a>
+                    <a class="btn btn-primary py-3 px-5" href="#contact">Hire Me</a>
                 </div>
             </div>
             <div class="row g-4">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
                         <div class="bg-icon flex-shrink-0 mb-3">
-                            <i class="fa fa-crop-alt fa-2x text-dark"></i>
+                            <i class="fa fa-paint-brush fa-2x text-dark"></i>
                         </div>
                         <div class="ms-sm-4">
-                            <h4 class="mb-3">Creative Design</h4>
-                            <h6 class="mb-3">Start from <span class="text-primary">$199</span></h6>
-                            <span>Stet lorem dolor diam amet vero eos. No stet est diam amet diam ipsum. Clita dolor duo clita sit sed sit dolor eos.</span>
+                            <h4 class="mb-3">Creative &amp; Visual Design</h4>
+                            <span>I craft modern, brand-led visual concepts and layouts that command attention in the first 3 seconds &mdash; balanced typography, color systems and imagery that convert.</span>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
                         <div class="bg-icon flex-shrink-0 mb-3">
-                            <i class="fa fa-code-branch fa-2x text-dark"></i>
+                            <i class="fa fa-code fa-2x text-dark"></i>
                         </div>
                         <div class="ms-sm-4">
-                            <h4 class="mb-3">Graphic Design</h4>
-                            <h6 class="mb-3">Start from <span class="text-primary">$199</span></h6>
-                            <span>Stet lorem dolor diam amet vero eos. No stet est diam amet diam ipsum. Clita dolor duo clita sit sed sit dolor eos.</span>
+                            <h4 class="mb-3">Front-End Development</h4>
+                            <span>I translate designs into clean, semantic, lightning-fast code using HTML5, CSS3, JavaScript (ES6+) and Bootstrap &mdash; with accessibility and performance baked in.</span>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
                         <div class="bg-icon flex-shrink-0 mb-3">
-                            <i class="fa fa-code fa-2x text-dark"></i>
+                            <i class="fa fa-mobile-alt fa-2x text-dark"></i>
                         </div>
                         <div class="ms-sm-4">
-                            <h4 class="mb-3">Web Design</h4>
-                            <h6 class="mb-3">Start from <span class="text-primary">$199</span></h6>
-                            <span>Stet lorem dolor diam amet vero eos. No stet est diam amet diam ipsum. Clita dolor duo clita sit sed sit dolor eos.</span>
+                            <h4 class="mb-3">Responsive Web Design</h4>
+                            <span>Every build is mobile-first and pixel-perfect across phones, tablets and desktops &mdash; because over 60% of your users are on mobile.</span>
                         </div>
                     </div>
                 </div>
@@ -361,8 +380,29 @@
                         </div>
                         <div class="ms-sm-4">
                             <h4 class="mb-3">UI/UX Design</h4>
-                            <h6 class="mb-3">Start from <span class="text-primary">$199</span></h6>
-                            <span>Stet lorem dolor diam amet vero eos. No stet est diam amet diam ipsum. Clita dolor duo clita sit sed sit dolor eos.</span>
+                            <span>I research, wireframe, prototype and user-test interfaces in Figma so the final product is intuitive, delightful and measurably easier to use.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+                        <div class="bg-icon flex-shrink-0 mb-3">
+                            <i class="fa fa-layer-group fa-2x text-dark"></i>
+                        </div>
+                        <div class="ms-sm-4">
+                            <h4 class="mb-3">Design Systems &amp; Prototyping</h4>
+                            <span>I build reusable component libraries and interactive prototypes that keep products consistent, scalable and ready for engineering hand-off.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+                        <div class="bg-icon flex-shrink-0 mb-3">
+                            <i class="fa fa-rocket fa-2x text-dark"></i>
+                        </div>
+                        <div class="ms-sm-4">
+                            <h4 class="mb-3">Landing Pages &amp; Portfolio Sites</h4>
+                            <span>High-converting landing pages and personal portfolios optimised for speed (Core Web Vitals) and search &mdash; launched and live in days, not weeks.</span>
                         </div>
                     </div>
                 </div>
@@ -370,6 +410,53 @@
         </div>
     </div>
     <!-- Service End -->
+
+
+    <!-- Process Start -->
+    <div class="container-xxl py-6" id="process">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <h1 class="display-5 mb-4">How I Work &mdash; A Process Built for Results</h1>
+                    <p class="mb-4">Great products are not accidents. I follow a disciplined, transparent process that keeps every project on track, on budget and genuinely user-centred &mdash; so you always know what is happening and why.</p>
+                    <p class="mb-0">From the first discovery call to post-launch optimisation, I treat your product like my own business. That is the difference between a website that simply exists and one that performs.</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row g-4">
+                        <div class="col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="service-item bg-white rounded h-100 p-4 shadow-sm">
+                                <div class="bg-icon flex-shrink-0 mb-3"><i class="fa fa-search fa-2x text-dark"></i></div>
+                                <h4 class="mb-2">01. Discover</h4>
+                                <span class="small">Deep-dive into your goals, users and competitors to define what success actually looks like.</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="service-item bg-white rounded h-100 p-4 shadow-sm">
+                                <div class="bg-icon flex-shrink-0 mb-3"><i class="fa fa-pencil-ruler fa-2x text-dark"></i></div>
+                                <h4 class="mb-2">02. Design</h4>
+                                <span class="small">Wireframes, user flows and high-fidelity UI in Figma &mdash; tested before a single line of code.</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="service-item bg-white rounded h-100 p-4 shadow-sm">
+                                <div class="bg-icon flex-shrink-0 mb-3"><i class="fa fa-code fa-2x text-dark"></i></div>
+                                <h4 class="mb-2">03. Build</h4>
+                                <span class="small">Clean, responsive, accessible code with a focus on speed, SEO and Core Web Vitals.</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 wow fadeInUp" data-wow-delay="0.4s">
+                            <div class="service-item bg-white rounded h-100 p-4 shadow-sm">
+                                <div class="bg-icon flex-shrink-0 mb-3"><i class="fa fa-chart-line fa-2x text-dark"></i></div>
+                                <h4 class="mb-2">04. Launch &amp; Grow</h4>
+                                <span class="small">Ship, measure and iterate &mdash; because the best products keep improving after launch.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Process End -->
 
 
     <!-- Projects Start -->
@@ -383,7 +470,7 @@
                     <ul class="list-inline mx-n3 mb-0" id="portfolio-flters">
                         <li class="mx-3 active" data-filter="*">All Projects</li>
                         <li class="mx-3" data-filter=".first">UI/UX Design</li>
-                        <li class="mx-3" data-filter=".second">Graphic Design</li>
+                        <li class="mx-3" data-filter=".second">Web Design</li>
                     </ul>
                 </div>
             </div>
@@ -393,8 +480,13 @@
                         <img class="img-fluid" src="img/project-1.jpg" alt="">
                         <div class="portfolio-btn">
                             <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-link"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="#contact"><i class="fa fa-link"></i></a>
                         </div>
+                    </div>
+                    <div class="project-cap p-4">
+                        <span class="text-primary fw-semibold small text-uppercase">UI/UX Design</span>
+                        <h5 class="mt-1 mb-2">FinTech Mobile App &mdash; UX Case Study</h5>
+                        <p class="text-muted mb-0 small">End-to-end research, wireframes and a high-fidelity prototype that lifted task completion by 38%.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 portfolio-item second">
@@ -402,8 +494,13 @@
                         <img class="img-fluid" src="img/project-2.jpg" alt="">
                         <div class="portfolio-btn">
                             <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-2.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-link"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="#contact"><i class="fa fa-link"></i></a>
                         </div>
+                    </div>
+                    <div class="project-cap p-4">
+                        <span class="text-primary fw-semibold small text-uppercase">Web Design</span>
+                        <h5 class="mt-1 mb-2">Boutique Agency Landing Page</h5>
+                        <p class="text-muted mb-0 small">A conversion-focused, mobile-first site built with HTML, CSS and Bootstrap &mdash; live in 5 days.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 portfolio-item first">
@@ -411,8 +508,13 @@
                         <img class="img-fluid" src="img/project-3.jpg" alt="">
                         <div class="portfolio-btn">
                             <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-3.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-link"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="#contact"><i class="fa fa-link"></i></a>
                         </div>
+                    </div>
+                    <div class="project-cap p-4">
+                        <span class="text-primary fw-semibold small text-uppercase">UI/UX Design</span>
+                        <h5 class="mt-1 mb-2">E-Commerce Design System</h5>
+                        <p class="text-muted mb-0 small">A scalable component library in Figma covering 40+ screens and reusable tokens.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 portfolio-item second">
@@ -420,8 +522,13 @@
                         <img class="img-fluid" src="img/project-4.jpg" alt="">
                         <div class="portfolio-btn">
                             <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-4.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-link"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="#contact"><i class="fa fa-link"></i></a>
                         </div>
+                    </div>
+                    <div class="project-cap p-4">
+                        <span class="text-primary fw-semibold small text-uppercase">Web Design</span>
+                        <h5 class="mt-1 mb-2">Personal Portfolio &amp; Blog</h5>
+                        <p class="text-muted mb-0 small">A fast, accessible portfolio with a custom blog &mdash; 98/100 Lighthouse performance.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 portfolio-item first">
@@ -429,8 +536,13 @@
                         <img class="img-fluid" src="img/project-5.jpg" alt="">
                         <div class="portfolio-btn">
                             <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-5.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-link"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="#contact"><i class="fa fa-link"></i></a>
                         </div>
+                    </div>
+                    <div class="project-cap p-4">
+                        <span class="text-primary fw-semibold small text-uppercase">UI/UX Design</span>
+                        <h5 class="mt-1 mb-2">Health Dashboard Prototype</h5>
+                        <p class="text-muted mb-0 small">An intuitive analytics dashboard with data-viz and a user-tested onboarding flow.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 portfolio-item second">
@@ -438,8 +550,13 @@
                         <img class="img-fluid" src="img/project-6.jpg" alt="">
                         <div class="portfolio-btn">
                             <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-6.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-link"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="#contact"><i class="fa fa-link"></i></a>
                         </div>
+                    </div>
+                    <div class="project-cap p-4">
+                        <span class="text-primary fw-semibold small text-uppercase">Web Design</span>
+                        <h5 class="mt-1 mb-2">Restaurant Booking Site</h5>
+                        <p class="text-muted mb-0 small">A responsive booking experience with real-time availability and a polished brand identity.</p>
                     </div>
                 </div>
             </div>
@@ -448,58 +565,6 @@
     <!-- Projects End -->
 
 
-    <!-- Team Start -->
-    <div class="container-xxl py-6 pb-5" id="team">
-        <div class="container">
-            <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="col-lg-6">
-                    <h1 class="display-5 mb-0">Team Members</h1>
-                </div>
-                <div class="col-lg-6 text-lg-end">
-                    <a class="btn btn-primary py-3 px-5" href="">Contact Us</a>
-                </div>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="team-item position-relative">
-                        <img class="img-fluid rounded" src="img/team-1.jpg" alt="">
-                        <div class="team-text bg-white rounded-end p-4">
-                            <div>
-                                <h5>Full Name</h5>
-                                <span>Designer</span>
-                            </div>
-                            <i class="fa fa-arrow-right fa-2x text-primary"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="team-item position-relative">
-                        <img class="img-fluid rounded" src="img/team-2.jpg" alt="">
-                        <div class="team-text bg-white rounded-end p-4">
-                            <div>
-                                <h5>Full Name</h5>
-                                <span>Designer</span>
-                            </div>
-                            <i class="fa fa-arrow-right fa-2x text-primary"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-item position-relative">
-                        <img class="img-fluid rounded" src="img/team-3.jpg" alt="">
-                        <div class="team-text bg-white rounded-end p-4">
-                            <div>
-                                <h5>Full Name</h5>
-                                <span>Designer</span>
-                            </div>
-                            <i class="fa fa-arrow-right fa-2x text-primary"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Team End -->
 
 
     <!-- Testimonial Start -->
@@ -523,10 +588,10 @@
                                     <i class="fa fa-quote-left text-primary"></i>
                                 </div>
                             </div>
-                            <p class="fs-5 fst-italic">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.</p>
+                            <p class="fs-5 fst-italic">"Nana Aba rebuilt our landing page from scratch and the difference was night and day. Load times dropped, conversions went up, and every breakpoint is flawless. She genuinely understands both design and code &mdash; a rare find."</p>
                             <hr class="w-25 mx-auto">
-                            <h5>Client Name</h5>
-                            <span>Profession</span>
+                            <h5>Kwame Mensah</h5>
+                            <span>Founder, BrightLane Agency</span>
                         </div>
                         <div class="testimonial-item text-center">
                             <div class="position-relative mb-5">
@@ -535,10 +600,10 @@
                                     <i class="fa fa-quote-left text-primary"></i>
                                 </div>
                             </div>
-                            <p class="fs-5 fst-italic">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.</p>
+                            <p class="fs-5 fst-italic">"Working with Nana Aba on our app's UX was effortless. She listened, researched our users, and delivered a prototype our whole team rallied behind. Communication was clear and she hit every deadline."</p>
                             <hr class="w-25 mx-auto">
-                            <h5>Client Name</h5>
-                            <span>Profession</span>
+                            <h5>Ama Owusu</h5>
+                            <span>Product Lead, FinTech Startup</span>
                         </div>
                         <div class="testimonial-item text-center">
                             <div class="position-relative mb-5">
@@ -547,10 +612,10 @@
                                     <i class="fa fa-quote-left text-primary"></i>
                                 </div>
                             </div>
-                            <p class="fs-5 fst-italic">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.</p>
+                            <p class="fs-5 fst-italic">"Professional, creative and incredibly detail-oriented. Our new portfolio finally looks as polished as the work we do. I'd hire Nana Aba again without a second thought."</p>
                             <hr class="w-25 mx-auto">
-                            <h5>Client Name</h5>
-                            <span>Profession</span>
+                            <h5>Yaw Boateng</h5>
+                            <span>Creative Director, Studio Nue</span>
                         </div>
                     </div>
                 </div>
@@ -575,58 +640,58 @@
                     <h1 class="display-5 mb-0">Let's Work Together</h1>
                 </div>
                 <div class="col-lg-6 text-lg-end">
-                    <a class="btn btn-primary py-3 px-5" href="">Say Hello</a>
+                    <a class="btn btn-primary py-3 px-5" href="#contact">Say Hello</a>
                 </div>
             </div>
             <div class="row g-5">
                 <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <p class="mb-2">My office:</p>
-                    <h3 class="fw-bold">123 Street, New York, USA</h3>
+                    <p class="mb-2">My location:</p>
+                    <h3 class="fw-bold">Accra-East-Legon</h3>
                     <hr class="w-100">
                     <p class="mb-2">Call me:</p>
-                    <h3 class="fw-bold">+012 345 6789</h3>
+                    <h3 class="fw-bold">+233 50 016 8681</h3>
                     <hr class="w-100">
                     <p class="mb-2">Mail me:</p>
-                    <h3 class="fw-bold">info@example.com</h3>
+                    <h3 class="fw-bold">nhyiraappiah159@gmail.com</h3>
                     <hr class="w-100">
                     <p class="mb-2">Follow me:</p>
                     <div class="d-flex pt-2">
-                        <a class="btn btn-square btn-primary me-2" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-primary me-2" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-primary me-2" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-square btn-primary me-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-square btn-primary me-2" href="https://github.com/" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a class="btn btn-square btn-primary me-2" href="https://linkedin.com/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-square btn-success me-2 whatsapp-pulse" href="https://wa.me/233500168681?text=Hello%20Nana%20Aba!" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-7 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <p class="mb-4">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="https://htmlcodex.com/contact-form">Download Now</a>.</p>
-                    <form>
+                    <p class="mb-4">Have a project in mind or just want to say hello? Fill out the form below and I'll get back to you as soon as possible.</p>
+                    <form id="contactForm">
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                    <input type="text" class="form-control" id="name" placeholder="Your Name" required>
                                     <label for="name">Your Name</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                    <input type="email" class="form-control" id="email" placeholder="Your Email" required>
                                     <label for="email">Your Email</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                    <input type="text" class="form-control" id="subject" placeholder="Subject" required>
                                     <label for="subject">Subject</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
+                                    <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 100px" required></textarea>
                                     <label for="message">Message</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <button class="btn btn-primary py-3 px-5" type="submit">Send Message</button>
+                                <p class="text-success mt-3 mb-0 d-none" id="formSuccess">Thank you! Your message has been sent successfully.</p>
                             </div>
                         </div>
                     </form>
@@ -642,7 +707,7 @@
         <div class="container-xxl pt-5 px-0">
             <div class="bg-dark">
                 <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd"
+                src="https://maps.google.com/maps?q=East%20Legon,%20Accra,%20Ghana&output=embed"
                 frameborder="0" style="width: 100%; height: 450px; border:0;" allowfullscreen="" aria-hidden="false"
                 tabindex="0"></iframe>
             </div>
@@ -652,17 +717,47 @@
 
 
     <!-- Copyright Start -->
-    <div class="container-fluid bg-dark text-white py-4">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom text-secondary" href="#">Your Site Name</a>, All Right Reserved.
+    <div class="container-fluid bg-dark text-white pt-5">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6">
+                    <h1 class="text-primary fw-bold mb-3">Nana Aba</h1>
+                    <p class="text-white-50 mb-4">Junior Web Developer &amp; UI/UX Designer crafting clean, responsive, and user-friendly web experiences with HTML, CSS, and JavaScript.</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square btn-primary me-2" href="https://github.com/" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a class="btn btn-square btn-primary me-2" href="https://linkedin.com/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-square btn-success me-2 whatsapp-pulse" href="https://wa.me/233500168681?text=Hello%20Nana%20Aba!" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                     </div>
-                    <div class="col-md-6 text-center text-md-end">
-                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                        Designed By <a class="border-bottom text-secondary" href="https://htmlcodex.com">HTML Codex</a>
-                        <br>Distributed By: <a class="border-bottom" href="https://themewagon.com" target="_blank">ThemeWagon</a>
-                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-light mb-3">Quick Links</h5>
+                    <a class="btn btn-link text-white-50 text-start p-0 mb-1" href="#home">Home</a><br>
+                    <a class="btn btn-link text-white-50 text-start p-0 mb-1" href="#about">About</a><br>
+                    <a class="btn btn-link text-white-50 text-start p-0 mb-1" href="#skill">Skills</a><br>
+                    <a class="btn btn-link text-white-50 text-start p-0 mb-1" href="#service">Services</a><br>
+                    <a class="btn btn-link text-white-50 text-start p-0 mb-1" href="#process">Process</a><br>
+                    <a class="btn btn-link text-white-50 text-start p-0 mb-1" href="#project">Projects</a><br>
+                    <a class="btn btn-link text-white-50 text-start p-0" href="#contact">Contact</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-3">Get In Touch</h5>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Accra-East-Legon</p>
+                    <p class="mb-2"><i class="fa fa-phone text-primary me-2"></i>+233 50 016 8681</p>
+                    <p class="mb-0"><i class="fa fa-envelope text-primary me-2"></i>nhyiraappiah159@gmail.com</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-3">My CV</h5>
+                    <p class="text-white-50 mb-3">Want to know more about my background and skills? Download my CV.</p>
+                    <a class="btn btn-primary py-2 px-4" href="cv.html" target="_blank"><i class="fa fa-download me-2"></i>Download CV</a>
+                </div>
+            </div>
+            <hr class="text-secondary mt-4 mb-0">
+            <div class="row py-3">
+                <div class="col-md-6 text-center text-md-start">
+                    &copy; <span class="text-primary">Nana Aba Nhyira</span>. All Rights Reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end text-white-50">
+                    Designed with <i class="fa fa-heart text-primary"></i> by Nana Aba Nhyira
                 </div>
             </div>
         </div>
@@ -688,6 +783,14 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            this.reset();
+            document.getElementById('formSuccess').classList.remove('d-none');
+        });
+    </script>
 </body>
 
 </html>
