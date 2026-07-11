@@ -68,7 +68,7 @@ pdf.ln(1)
 # ---- Core Competencies ----
 section(pdf, "Core Competencies")
 pdf.set_font("Helvetica", "", 10)
-comps = ("HTML5 & Semantic Markup   -   CSS3 & SASS   -   JavaScript (ES6+)   -   "
+comps = ("HTML5 & Semantic Markup   -   CSS3    -   JavaScript (ES6+)   -   "
          "UI Frameworks & Libraries   -   Responsive & Mobile-First   -   UI/UX Design   -   "
          "Figma   -   Wireframing & Prototyping   -   Design Systems   -   Accessibility (WCAG)   -   Web Performance")
 pdf.multi_cell(0, 5.5, comps)
